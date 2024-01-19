@@ -3,109 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link href="reset.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Ani'Meaux</title>
+
+
+    <title>
+        Ani'Meaux
+    </title>
 </head>
 
 <body>
 
-   <div>
+   <!-- Main container -->
+   <div class="container-fluid">
 
-    <header>
-        <div>
-            <a href="index.html">
-                <img src="img/logo_accueil.svg" alt="logo Ani'Meaux">
+    <!-- Header section -->
+    <header class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo_accueil.svg" alt="logo Ani'Meaux" class="img-fluid">
             </a>
-            <button type="button">
-                <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div>
-                <ul>
-                    <li><a href="#">Adopter</a></li>
-                    <li><a href="#">Agir</a></li>
-                    <li><a href="#">Avertir</a></li>
-                    <li><a href="#">S'informer</a></li>
-                    <li><a href="Evenements.html">Evenements</a></li>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Adopter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Agir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Avertir</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">S'informer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Evenements.html">Evenements</a></li>
                 </ul>
             </div>
         </div>
     </header>
     
-    <main>
-        <section>
-           <div>
-            <div>
-                <img width="400px" src="img/adoptez.png" alt="Image_chien">
+    <!-- Main content -->
+    <main class="container-fluid separator">
+        <section id="Section-adoption" class="mb-5">
+           <div class="row">
+            <div class="col-md-6 order-md-last">
+                <img width="400px" src="img/adoptez.png" alt="Image_chien" class="img-fluid">
             </div>
-            <div>
+            <div class="col-md-6">
                 <h1>Adoptez !</h1>
                 <p>Trouvez le compagnon de vos rêves et donnez-lui une seconde chance.</p>
-                <div>
-                    <select id="Espèces" name="Espèces">
+                <div class="input-group mb-3">
+                    <select class="form-select" id="Espèces" name="Espèces">
                         <option value="" selected disabled>Espèces</option>
                         <option value="toutes_les_espèces">Toutes les espèces</option>
                         <option value="chien">Chien</option>
                         <option value="chat">Chat</option>
                     </select>
-                    <button type="button">&#128269</button>
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">&#128269</button>
                 </div>
             </div>
            </div>
 
-         </section>
-        <section>
+         <!-- Who we are section -->
+        </section>
+        <section id="Section-who" class="mb-5">
             <h1>Qui sommes-nous ?</h1>
-            <p>Ani’Meaux est une association loi 1901 de protection animale, reconnue d’intérêt général, qui a pour but de sauver des animaux domestiques et sensibiliser à la cause animale en général.</p>
-            <div>
-                <ul>
-                    <li>
+            <p>Ani’Meaux est une <b>association</b> loi 1901 de protection animale, reconnue d’intérêt général, qui a pour but de <b>sauver des animaux domestiques</b> et sensibiliser à la cause animale en général.</p>
+            <div class="container">
+                <ul class="row justify-content-center">
+                    <li class="col-md-6 col-lg-4">
                         <div>
-                            <img width="200px" src="img/qui_1.png" alt="Image_chat1">
-                            <p>Nous recueillons les animaux abandonnés, maltraités ou errants.</p>
+                            <img width="200px" src="img/qui_1.png" alt="Image_chat1" class="img-fluid mx-auto d-block">
+                            <p class="d-inline-block text-center spacing">
+                                Nous recueillons les animaux abandonnés, maltraités ou errants.
+                            </p>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-md-6 col-lg-4">
                         <div>
-                            <img width="200px" src="img/qui_2.png" alt="Image_chat2">
-                            <p>Nous les plaçons dans une famille d’accueil adaptée à l’animal afin de lui prodiguer tous les soins nécessaires à son rétablissement.</p>
+                            <img width="200px" src="img/qui_2.png" alt="Image_chat2" class="img-fluid mx-auto d-block">
+                            <p class="d-inline-block text-center spacing">
+                                Nous les plaçons dans une famille d’accueil adaptée à l’animal afin de lui prodiguer tous les soins nécessaires à son rétablissement.
+                            </p>
                         </div>
                     </li>
-                    <li>
+                    <li class="col-md-6 col-lg-4">
                         <div>
-                            <img width="200px" src="img/qui_3.png" alt="Image_chat3">
-                            <p>Nous leur trouvons une nouvelle famille pour la vie.</p>
+                            <img width="200px" src="img/qui_3.png" alt="Image_chat3" class="img-fluid mx-auto d-block">
+                            <p class="d-inline-block text-center  spacing">
+                                Nous leur trouvons une nouvelle famille pour la vie.
+                            </p>
                         </div>
                     </li>
                 </ul>
             </div>
-        </section>
             
-        <section>
-                <ul>
-                    <li>
-                        <h3>6 ans</h3>
+            
+            
+
+        </section>
+
+         <!-- Statistics section -->
+        <section class="mb-5">
+                <ul id="ul-tab" class="row justify-content-center">
+                    <li class="col-ms-6 col-md-4">
+                        
+                        <h3 class="ans">6 ans</h3>
                         <p>D'existence</p>
                     </li>
-                    <li>
-                        <h3>1000</h3>
+                    <li class="col-ms-6 col-md-4">
+
+                        <h3 class="charges">1000</h3>
                         <p>Prises en charge</p>
                     </li>
-                    <li>
-                        <h3>50</h3>
+                    <li class="col-ms-6 col-md-4">
+                        
+                        <h3 class="benevoles">50</h3>
                         <p>Bénévoles</p>
                     </li>
                 </ul>
         </section>
 
-        <section>
-            <h1>Evenements à venir</h1>
-            <div>
-                <div>
-                    <img src="img/collecte.webp" alt="collecte_nourriture">
-                    <div>
+        <!-- Upcoming events section -->
+        <section id="Events" class="mb-5">
+            <h1 class="mb-4">Evenements à venir</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="img/collecte.webp" alt="collecte_nourriture" class="mb-4">
+                    <div class="event-details">
                         <ul>
                             <li><h4>Collecte Alimentaire - Truffaut</h4></li>
                             <li><p>Première collecte alimentaire de l'année !</p></li>
@@ -117,9 +141,9 @@
                     </div>
                 </div>
         
-                <div>
-                    <img src="img/salon.webp" alt="salon_Ani'Meaux">
-                    <div>
+                <div class="col-md-6">
+                    <img src="img/salon.webp" alt="salon_Ani'Meaux" class="mb-4">
+                    <div class="event-details">
                         <ul>
                             <li><h4>Salon des Ani'Meaux</h4></li>
                             <li><p>Le Salon des Ani'Meaux a pour vocation de sensibiliser les petits et les grands au bien-être de nos amis les animaux.</p></li>
@@ -129,30 +153,70 @@
                     </div>
                 </div>
             </div>
-            <a href="evenements.html">Voir plus</a>
+            <a href="evenements.html" class="btn btn-primary mt-4">Voir plus</a>
         </section>
         
-        <section>
-            <div>
-                <div>
-                    <img width="400px" src="img/famille.png" alt="Chat_avec_un_homme">
+        <!-- Become a foster family section -->
+        <section id="Section-family" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="400px" src="img/famille.png" alt="Chat_avec_un_homme" class="img-fluid">
                 </div>
-                <div>
+                <div class="col-md-6">
                     <h1>Devenez famille d’accueil</h1>
                     <p>Aidez-nous à sauver les animaux en leur consacrant temps et attention, sans aucune contrainte financière.</p>
-                    <button>En savoir plus</button>
+                    <button class="btn btn-primary">En savoir plus</button>
                 </div>
             </div>
         </section>
 
-        <div>
+        <!-- Donation section -->
+        <div class="container">
             <div>
-                <section>
+                <section id="Don" class="mb-5">
                     <h1>Faîtes un don !</h1>
                     <p>Vous souhaitez nous aider mais vous ne pouvez accueillir ou adopter ? Vous pouvez nous faire un don ! Ce don servira à financer les soins vétérinaires, effectuer plus de sauvetages et acheter du matériel pour les animaux.</p>
-                    <button>Faire un don</button>
+                    <button class="btn btn-primary">Faire un don</button>
                 </section>
             </div>
         </div>
 
-       
+        <!-- Volunteer section -->
+        <section id="Volunteer" class="mb-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <img width="400px" src="img/bénévole.png" alt="Deux_bénévoles" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h1>Devenez bénévole</h1>
+                    <p>Contribuez aux <b>sauvetages des animaux</b> en difficultés que nous sommes amenés à prendre sous notre aile.</p>
+                    <button class="btn btn-primary">En savoir plus</button>
+                </div>
+            </div>
+            
+
+        </section>
+    </main>
+
+     <!-- Footer section -->
+    <footer id="footer" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Newsletter</h1>
+                <label for="email">Abonnez-vous à la newsletter pour ne rien rater des dernières nouveautés.</label>
+                <input class="inputfoot" type="email" placeholder="Jean@email.com">
+            </div>
+            <div class="col-md-6">
+                <img src="img/logo_footer.svg" alt="Ani'Meaux">
+                <ul>
+                    <li><a href="">&#9990 06 12 19 43 92</a></li>
+                    <li><a href="mailto:contact@animeaux.org">@ contact@animeaux.org</a></li>
+                    <li><a href="https://www.google.com/maps/place/30+Rue+Pierre+Brasseur,+77100+Meaux" target="_blank">&#128205; 30 Rue Pierre Brasseur, 77100 Meaux</a></li>
+                    <li class="pfoot"><p><b>Nous ne disposons pas de structure physique, il s’agit d’une adresse postale uniquement.</b></p></li>
+                </ul>
+            </div>
+        </div>  
+    </footer>
+    
+</body>
+</html>

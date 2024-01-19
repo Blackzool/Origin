@@ -1,4 +1,9 @@
-/* body styles */
+/* body/html styles */
+
+html {
+    height: 100%;
+}
+
 body {
     background-color: white;
     text-align: center;
@@ -7,9 +12,12 @@ body {
     line-height: 24px;
     max-width: 100%;
     overflow-x: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-/* body styles */
+/* body/html styles */
 
 /* container */
 
@@ -17,6 +25,7 @@ body {
     max-width: 1024px;
     margin-right: auto;
     margin-left: auto;
+    flex: 1;
 }
 
 /* container */
@@ -93,3 +102,30 @@ p.d-inline-block {
 }
 
 /* ul styles */
+
+/* a styles */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+
+/* a styles */
+
+/* footer */
+
+.pfoot {
+    margin-top: 10px;
+}
+
+.inputfoot {
+    margin-top: 10px;
+}
+
+/* footer */
